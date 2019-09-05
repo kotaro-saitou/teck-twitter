@@ -19,6 +19,6 @@
           <%= 'active' if current_page?(followers_user_path(@user)) %>">
           Favorites  <span class="badge badge-secondary"><%= @count_favorite %></span></a></li>
     </ul>
-    <%= render 'users', users: @followers %>
+    <%= render 'microposts/microposts', microposts: @favorites %>
   </div>
 </div>
